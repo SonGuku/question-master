@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <META HTTP-EQUIV="pragma" CONTENT="no-cache">
+	<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate">
+	<META HTTP-EQUIV="expires" CONTENT="0">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/reset-1.0.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/jquery.mobile-1.4.5.min.css' %}">
+
+    <script type="text/javascript" src="{% static 'js/jquery.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/jquery.mobile-1.4.5.min.js' %}"></script>
+</head>
+<body data-role="page" data-dom-cache="true">
+<div id="header" class="header"  >
+        <h1 style="font-size: 20pt; padding-top:30px;"><center>Welcome</center></h1>
+        <div class="banner banner-gj bc"></div>
+    </div>
+
+            <div style="text-align: center">
+
+                   <a href="/login" class="ui-btn">开始答题</a>
+            </div>
+
+
+
+
+    <script type="text/javascript" src="{% static 'js/survey.js' %}"></script>
+
+
+
+</body></html>

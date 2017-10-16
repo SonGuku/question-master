@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <META HTTP-EQUIV="pragma" CONTENT="no-cache">
+	<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate">
+	<META HTTP-EQUIV="expires" CONTENT="0">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/reset-1.0.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/jquery.mobile-1.4.5.min.css' %}">
+
+    <script type="text/javascript" src="{% static 'js/jquery.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/jquery.mobile-1.4.5.min.js' %}"></script>
+</head>
+<body data-role="page" data-dom-cache="true">
+<div id="header" class="header"  >
+        <h1 style="font-size: 20pt; padding-top:30px;"><center>Reg</center></h1>
+        <div class="banner banner-gj bc"></div>
+    </div>
+    <form action="/regCommit/" method="post" name="fm" id="fm">
+            {% csrf_token %}
+	         <input type="text" data-clear-btn="true" name="account" id="account" value="" placeholder="请输入账号 ">
+             <input type="password" data-clear-btn="true" name="password" id="password" value="" placeholder="请输入密码">
+
+	           <p style="margin-bottom:20px;"></p>
+            <div style="text-align: center">
+	              	<input type="submit" value="提交">
+	            </div>
+
+ <div style="margin-bottom:20px;color:red;text-align: center;">
+	          		 {{ msg}}
+	        	</div>
+
+
+        </form>
+
+    <script type="text/javascript" src="{% static 'js/survey.js' %}"></script>
+
+
+
+</body></html>

@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <META HTTP-EQUIV="pragma" CONTENT="no-cache">
+	<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate">
+	<META HTTP-EQUIV="expires" CONTENT="0">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/reset-1.0.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <script type="text/javascript" src="{% static 'js/jquery-1.11.1.min.js' %}"></script>
+</head>
+<body>
+<div id="header" class="header">
+        <h1>Welcome</h1>
+        <div class="banner banner-gj bc"></div>
+    </div>
+    <div id="wrap" class="wrap bc">
+        <h2>
+           答对：{{correct}}
+        </h2>
+
+
+    <script type="text/javascript" src="{% static 'js/survey.js' %}"></script>
+
+
+</body></html>

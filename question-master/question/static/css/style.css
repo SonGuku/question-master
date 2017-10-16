@@ -1,0 +1,174 @@
+@charset "utf-8"; 
+
+body {
+	background: url(../images/bg_bd.jpg) repeat top left;
+	font: 16px/30px '微软雅黑', sans-serif;
+	min-width: 320px
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	width: auto\9
+}
+
+a {
+	color: #C10
+}
+
+.footer {
+	font-size: 14px;
+	color: #840
+}
+
+.header, .banner {
+	/* height: 80px */
+}
+
+.header {
+	/* background: url(../images/bg_hd.jpg) repeat-x top left */
+	background:#F54343;
+	
+}
+
+.header h1{
+	font-size: 20pt; 
+	padding-top:20px;
+	text-align: center;
+	color:#fff;
+	padding-bottom: 20px;
+	
+}
+
+.banner {
+	width: 530px
+}
+
+.banner-gm {
+	background: url(../images/img_hd.jpg) no-repeat -300px 0
+}
+
+.banner-gj {
+	background: url(../images/img_hd.jpg) no-repeat -300px -100px
+}
+
+.wrap {
+	width: 700px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background: #FFF
+}
+
+.survey {
+	padding: 40px 90px;
+	border: 1px solid #EC9
+}
+
+.survey-options {
+	padding: 30px 0
+}
+
+.survey-option, .survey-select {
+	padding-left: 60px;
+	margin: 10px 0;
+	min-height: 40px;
+	line-height: 20px;
+	cursor: pointer
+}
+
+.survey-option {
+	background: #EEE url(../images/bg_opt.jpg) no-repeat 0 -40px
+}
+
+.survey-select {
+	background: #EEE url(../images/bg_opt.jpg) no-repeat 0 0
+}
+
+.survey-score {
+	background: url(../images/bg_score.jpg) no-repeat bottom center;
+	padding: 30px 0;
+	margin: 20px 0;
+	font-size: 80px;
+	line-height: 80px;
+	font-weight: bold;
+	color: #C10
+}
+
+.survey-remark {
+	font-size: 18px;
+	padding: 20px;
+}
+
+.action {
+	width: 270px
+}
+
+.action-redo, .action-next, .action-over, .action-more {
+	width: 125px;
+	height: 55px;
+	cursor: pointer
+}
+
+.action-redo {
+	background: url(../images/bg_btn.jpg) no-repeat 0 0
+}
+
+.action-next {
+	background: url(../images/bg_btn.jpg) no-repeat -125px 0
+}
+
+.action-over {
+	background: url(../images/bg_btn.jpg) no-repeat 0 -55px
+}
+
+.action-more {
+	background: url(../images/bg_btn.jpg) no-repeat -125px -55px
+}
+
+@media screen and (max-width:700px) {
+	.wrap {
+		width: 100%;
+		margin: 0
+	}
+	.survey {
+		padding: 5px 10px;
+		border: 0
+	}
+}
+
+@media screen and (max-width:530px) {
+	html {
+		-webkit-text-size-adjust: none
+	}
+	.banner {
+		width: 300px
+	}
+	.banner-gm {
+		background: url(../images/img_hd.jpg) no-repeat 0 0
+	}
+	.banner-gj {
+		background: url(../images/img_hd.jpg) no-repeat 0 -100px
+	}
+}
+
+.tests {
+	font-size: 20px;
+}
+
+.rc_body {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	padding: 0 0 50px;
+	text-align: center;
+}
+
+.rc_img {
+	height: 260px;
+	width: 260px;
+}
+
+.rc_txt {
+	display: block;
+	line-height: 20px;
+}

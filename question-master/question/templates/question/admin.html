@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <META HTTP-EQUIV="pragma" CONTENT="no-cache">
+	<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate">
+	<META HTTP-EQUIV="expires" CONTENT="0">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/reset-1.0.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/jquery.mobile-1.4.5.min.css' %}">
+
+    <script type="text/javascript" src="{% static 'js/jquery.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/jquery.mobile-1.4.5.min.js' %}"></script>
+</head>
+<div data-role="page" id="pageone">
+  <div data-role="header">
+    <h1>成绩排名</h1>
+  </div>
+  <div data-role="main" class="ui-content">
+    <table data-role="table" class="ui-responsive">
+      <thead>
+        <tr>
+          <th>序列</th>
+          <th>姓名</th>
+          <th>分数</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for score in scores.all %}
+            <tr>
+                <td>{{ forloop.counter }}</td>
+                <td>{{score.user.name}}</td>
+                <td>{{ score.score }}</td>
+            </tr>
+
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  <div data-role="footer"></div>
+</div>
+</body>
+</html>
